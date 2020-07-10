@@ -25,7 +25,27 @@ function getPokemon() {
     .then(
        function(data) {
         pokemon = data.results;
+        render(); // programatically render the html
     }, function(error){
         console.log("Error: ", error);
     });
+}
+
+
+function generateHTML() {
+    return pokemon.map(function(p) {
+        return `
+        <li class="collection-item red-text">
+            <div style="text-transform: capitalize;">${p.name}
+                <span data-url="${p.url}" class="secondary-content blue-text">
+                Detail
+                </span>
+            </div>
+        </li>`;
+    });
+}
+
+function render() {
+    const html = generateHTML().join("");
+    $ulEl.html(html)
 }
