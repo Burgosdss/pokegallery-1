@@ -27,7 +27,7 @@ A web app for gathering and displaying pokémon data!
 - jQuery
 
 # Getting Started
-[Click here](https://mydeveloperjourney.github.io/pokegallery/) to open app in browser
+[Click here]() to open app in browser
 
 # Future Enhancements
 1. A favorites feature to allow for users to make a collection of their favorite Pokémon
